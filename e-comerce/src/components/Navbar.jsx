@@ -11,7 +11,6 @@ function Navbar(){
     <button>Carrito</button>
   <CartWidget/>
   </div>
-  11
 </nav>
     )
 }

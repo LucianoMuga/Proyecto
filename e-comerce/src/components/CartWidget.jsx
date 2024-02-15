@@ -2,7 +2,11 @@ import { IoCart } from "react-icons/io5";
 
 function CartWidget(){
     return(
-        <IoCart></IoCart>
+        <div>
+            <IoCart></IoCart>
+            11
+        </div>
+        
     )
 }
 
