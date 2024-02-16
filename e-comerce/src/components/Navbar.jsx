@@ -6,11 +6,12 @@ function Navbar(){
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
   <div className="container-fluid">
     <h3>E-comerce</h3>
-    <button>Crear cuenta</button>
-    <button>Iniciar session</button>
-    <button>Carrito</button>
+    <button className="btn btn-outline-primary">Crear cuenta</button>
+    <button className="btn btn-outline-primary">Iniciar session</button>
+    <button className="btn btn-outline-primary">Carrito</button>
   <CartWidget/>
   </div>
+
 </nav>
     )
 }
