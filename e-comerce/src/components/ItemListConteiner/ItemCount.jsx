@@ -17,6 +17,11 @@ function ItemCount({stock, onAdd}){
         }
     }
 
+    const reset = () => {
+        let initial = 0
+        setState(initial)
+    }
+
 
     return(
         <div className="container-fluid">
@@ -24,6 +29,7 @@ function ItemCount({stock, onAdd}){
                 <button  type="button" className="btn btn-outline-primary" onClick={increment}>+</button>
                     <h4 className="text-body-secondary">{state}</h4> 
             <button type="button" className="btn btn-outline-primary" onClick={decrement}>-</button>
+            <button type="button" className="btn btn-outline-primary" onClick={reset}>Reset</button>
             </div>
             <div>
                 <button  type="button" className="btn btn-outline-primary" onClick={() => onAdd(state)} disabled={!stock}>

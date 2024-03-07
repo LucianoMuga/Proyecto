@@ -1,12 +1,13 @@
-import ItemListConteiner from './components/ItemListConteiner'
-import Navbar from './components/Navbar'
+import Dashboard from "./components/Dashboard"
+import {BrowserRouter} from "react-router-dom"
 
 function App() {
 
   return (
     <div>
-      <Navbar/>
-      <ItemListConteiner greeting={"Bienvenidos"}/>
+      <BrowserRouter>
+        <Dashboard/>
+      </BrowserRouter>
     </div> 
   )
 }
