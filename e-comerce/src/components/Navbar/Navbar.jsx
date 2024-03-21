@@ -1,11 +1,13 @@
-import CartWidget from "./CartWidget"
+import CartWidget from "../CartWidget/CartWidget"
 import logo from "../../assets/react.svg"
 import { Link } from "react-router-dom"
+
+
 
 function Navbar(){
 
     return(
-      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+      <nav className="navbar navbar-expand-lg bg-body-tertiary NavBar">
     <img src={logo} width="50" ></img>
   <div className="container-fluid">
     <Link to={"/"}>
@@ -15,7 +17,8 @@ function Navbar(){
     <button className="btn btn-outline-primary">Iniciar session</button>
     <button className="btn btn-outline-primary">Carrito</button>
     <Link to={"/category/celular"}>Celular</Link>
-    <Link to={"/category/tablet"}>Tablet</Link>
+    <Link to={"/category/tablet"}>Tablets</Link>
+    <Link to={"/category/computers"}>Notebooks</Link>
   <CartWidget/>
   </div>
 

@@ -1,8 +1,9 @@
-import Item from "./Item"
+import Item from "../Item/Item"
+import "./ItemList.css"
 
 function ItemList({products}){
     return(
-        <div>
+        <div className="ListGroup">
            {
             products.map((product) => {
                 return <Item key={product.id} {...product}/>

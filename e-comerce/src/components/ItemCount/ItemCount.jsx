@@ -21,7 +21,7 @@ function ItemCount({stock, onAdd}){
         let initial = 0
         setState(initial)
     }
-
+    
 
     return(
         <div className="container-fluid">

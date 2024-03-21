@@ -1,7 +1,11 @@
+import ItemDetail from "../ItemDetail/ItemDetail"
+
 import { useEffect, useState } from "react"
-import { getProductsById } from "../../asyncMock"
-import ItemDetail from "./ItemDetail"
 import { useParams } from "react-router-dom"
+import "./ItemDetailConteiner.css"
+
+import { doc, getDoc } from "firebase/firestore"
+import { db } from "../../Services/firebase"
 
 
 function ItemDetailConteiner(){
@@ -10,17 +14,20 @@ function ItemDetailConteiner(){
     const {productId} = useParams()
 
     useEffect(() => {
-        getProductsById(productId)
-            .then(response => {
-                setProduct(response)
+
+        getDoc(doc(db, "products", productId))
+            .then((res) => {
+                const product = {id: res.id, ...res.data()}
+                setProduct(product)
             })
             .catch((error) => {
                 console.log(error);
             })
+            
     }, [productId])
     
     return(
-        <div>
+        <div className="ItemDetailContainer">
             <ItemDetail {...product}/>
         </div>
     )

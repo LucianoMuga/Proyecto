@@ -26,6 +26,33 @@ const products = [
       stock: 0,
       description: "Descripcion de Ipad",
     },
+    {
+      id: "4",
+      name: "iphone 15",
+      price: 1400,
+      category: "celular",
+      img: "https://http2.mlstatic.com/D_NQ_NP_779617-MLA71782867320_092023-O.webp",
+      stock: 16,
+      description: "Descripcion de Iphone 15",
+    },
+    {
+      id: "5",
+      name: "Macbook Pro",
+      price: 1400,
+      category: "computers",
+      img: "https://d2ihpvt6nd5q28.cloudfront.net/wp-content/uploads/2022/08/mbp-silver-gallery2-202206_GEO_MX.jpg",
+      stock: 16,
+      description: "Descripcion de Samsung s21",
+    },
+    {
+      id: "6",
+      name: "Samsung Galaxy Tab",
+      price: 1000,
+      category: "tablet",
+      img: "https://images.fravega.com/f1000/439c8fcdf8f4187aaef869409da06758.jpg",
+      stock: 16,
+      description: "Descripcion de Samsung s21",
+    },
   ];
 
 //Esta funcion retorna una promesa.
