@@ -1,6 +1,6 @@
 import { IoCart } from "react-icons/io5";
-import { Link } from "react-router-dom";
 import { useCart } from "../../context/CartContext";
+import { Link } from "react-router-dom";
 
 function CartWidget(){
 
@@ -8,9 +8,8 @@ function CartWidget(){
 
     return(
         <div>
-            <Link to="/cart">
-            <IoCart style={{width: 25}} 
-            />  
+            <Link to={"/cart"}>
+            <IoCart style={{width: 25}}/>  
             </Link>
             {totalQuantity}
         </div>

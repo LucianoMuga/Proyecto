@@ -16,7 +16,7 @@ function Item({name, img, category, price, id}){
                 <h3 className="Info"> $ {price}</h3>
             </section>
             <footer className="ItemFooter">
-                <Link to={`/detail/${id}`} type="button" className="btn btn-outline-primary">Ver detalle</Link>
+                <Link to={`/detail/${id}`} type="button" className="btn btn-outline-primary ButtonDetail">Ver detalle</Link>
             </footer>
         </div>
         </article>

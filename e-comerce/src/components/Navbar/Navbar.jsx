@@ -2,6 +2,8 @@ import CartWidget from "../CartWidget/CartWidget"
 import logo from "../../assets/react.svg"
 import { Link } from "react-router-dom"
 
+import "./Navbar.css"
+
 
 
 function Navbar(){
@@ -12,10 +14,8 @@ function Navbar(){
   <div className="container-fluid">
     <Link to={"/"}>
       <h3>E-comerce</h3>
-    </Link>
-    <button className="btn btn-outline-primary">Crear cuenta</button>
-    <button className="btn btn-outline-primary">Iniciar session</button>
-    <button className="btn btn-outline-primary">Carrito</button>
+    </Link>           
+    {/* <button className="btn btn-outline-primary">Crear cuenta</button> */}
     <Link to={"/category/celular"}>Celular</Link>
     <Link to={"/category/tablet"}>Tablets</Link>
     <Link to={"/category/computers"}>Notebooks</Link>
